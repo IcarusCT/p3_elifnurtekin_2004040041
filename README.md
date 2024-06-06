@@ -7,6 +7,9 @@
 Bu proje, Türkçe yazılı metinlerden duygusal durumları sınıflandırmak için geliştirilmiş bir model içerir. 
 Model, kullanıcıların yazdığı metinleri analiz ederek duygusal durumlarını tahmin eder.
 
+ONEMLI : Model yuksek boyutta oldugundan drive yuklemesi yaptim lutfen projeyi calistirmadan once model dosyasini verilen drive linki uzerinden yukleyiniz.
+(https://drive.google.com/file/d/1b4Ys82_xKW6cMAH4_CySUwNYH64SwAzk/view?usp=sharing)
+
 ## Dosyalar
 app.py - Web arayüzüne bu dosyadan ulaşılabilir.
 dataset_generator.py - Sentetik data üretimi için yazılan kodun dosyası.
