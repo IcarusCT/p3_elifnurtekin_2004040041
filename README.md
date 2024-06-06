@@ -11,10 +11,10 @@ ONEMLI : Model yuksek boyutta oldugundan drive yuklemesi yaptim lutfen projeyi c
 (https://drive.google.com/file/d/1b4Ys82_xKW6cMAH4_CySUwNYH64SwAzk/view?usp=sharing)
 
 ## Dosyalar
-app.py - Web arayüzüne bu dosyadan ulaşılabilir.
-dataset_generator.py - Sentetik data üretimi için yazılan kodun dosyası.
-testdata.csv - Dataset dosyası.
-training_model.ipynb
+app.py - Web arayüzüne bu dosyadan ulaşılabilir. 
+dataset_generator.py - Sentetik data üretimi için yazılan kodun dosyası. 
+testdata.csv - Dataset dosyası. 
+training_model.ipynb - Model eğitim dosyası. 
 
 
 ## Platform
