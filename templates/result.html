@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonuç</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('/static/background.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .overlay {
+            background-color: white;
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+        }
+        h1 {
+            color: #d78989;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            color: #555;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        a {
+            background-color: #F7CFCF;
+            color: rgb(0, 0, 0);
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        a:hover {
+            background-color: #f6c2c2;
+        }
+        
+        ul {
+            list-style-type: none; /* Liste öğelerinin başındaki noktaları kaldırır */
+            padding: 0; /* Varsayılan padding'i kaldırır */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>Sonuç</h1>
+        <h3>Gönderilen Metin: </h3> <i>{{ text }}</i>
+        <br><br>
+        <h3>Tahmin Edilen Duygular: </h3> <b><ul>
+            {% for data in prediction %}
+                <li>{{ data[0] }}: {{ '%.2f'|format(data[1]*100) }}</li>
+            {% endfor %}
+        </ul></b>
+        <br><br><br>
+
+        <a href="/">Geri Dön</a>
+    </div>
+</body>
+</html>
